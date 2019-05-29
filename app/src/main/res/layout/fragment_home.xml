@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable name="vm" type="test.mvvm.demo.viewmodel.HomeViewModel"/>
+    </data>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#444444"
+                app:srlPrimaryColor="#444444"
+                app:srlAccentColor="@android:color/white"
+                app:srlEnablePreviewInEditMode="true"
+        >
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <TextView
+                android:layout_centerInParent="true"
+                android:text="tabtab"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</layout>
+
