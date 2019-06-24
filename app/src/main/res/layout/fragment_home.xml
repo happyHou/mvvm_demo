@@ -6,29 +6,423 @@
         <variable name="vm" type="test.mvvm.demo.viewmodel.HomeViewModel"/>
     </data>
 
-    <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+
+    <!--http://www.jcodecraeer.com/plus/view.php?aid=10428-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#444444"
-                app:srlPrimaryColor="#444444"
-                app:srlAccentColor="@android:color/white"
-                app:srlEnablePreviewInEditMode="true"
-        >
+            >
 
-            <androidx.recyclerview.widget.RecyclerView
+        <com.google.android.material.appbar.AppBarLayout
+                android:orientation="vertical"
+                android:layout_height="140dp"
+                android:layout_width="match_parent"
+                app:elevation="0dp"
+                >
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="100dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:title="我是collapsebar的标题"
+                    >
 
-        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+                <RelativeLayout
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        >
+                    <TextView
+                            android:layout_centerInParent="true"
+                            android:text="搜索居中"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            />
+                </RelativeLayout>
 
-        <TextView
-                android:layout_centerInParent="true"
-                android:text="tabtab"
-                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.Toolbar
+                        android:background="@color/cardview_light_background"
+                        app:layout_collapseMode="pin"
+                        android:layout_width="match_parent"
+                        app:contentInsetStart="0dp"
+                        android:layout_height="40dp"
+                        >
 
-    </RelativeLayout>
+                    <RelativeLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                        <TextView
+                                android:layout_alignParentLeft="true"
+                                android:text="left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                        <TextView
+                                android:layout_centerInParent="true"
+                                android:text="title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                        <TextView
+                                android:layout_alignParentRight="true"
+                                android:text="right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#4E65FE"
+                    android:gravity="center_vertical"
+                    android:text="悬停标题"
+                    />
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <RelativeLayout
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                <TextView
+                        android:text="hihih"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="hihih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:text="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
 </layout>
 
