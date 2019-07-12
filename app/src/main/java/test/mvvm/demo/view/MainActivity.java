@@ -2,6 +2,8 @@ package test.mvvm.demo.view;
 
 import android.view.View;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +15,7 @@ import test.mvvm.demo.view.adapter.MainPagerAdapter;
 import test.mvvm.demo.viewmodel.MainViewModel;
 
 
+@Route(path = "/test/mainAct")
 public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewModel> {
 
     @Override
