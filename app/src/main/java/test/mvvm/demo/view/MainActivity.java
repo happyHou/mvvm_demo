@@ -32,7 +32,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
     @Override
     protected void setUpView() {
         List<HomeFragment> list=new ArrayList<>();
-        list.add(new HomeFragment());
+        list.add(HomeFragment.newInstance("nihao"));
         list.add(new HomeFragment());
         MainPagerAdapter adapter=new MainPagerAdapter(getSupportFragmentManager(),list);
         binding.viewPager.setAdapter(adapter);

@@ -19,14 +19,17 @@ public class LoginInterceptor implements IInterceptor {
         if (loginFlag) {
             callback.onContinue(postcard);
         }else {
-            Postcard postcard1 = ARouter.getInstance()
+            ARouter.getInstance()
                     .build("/test/loginAct")
-                    .withString("hi", "hi");
+                    .withString("hi", "hi")
+                    .greenChannel()
+                    .navigation(mContext);
+
 
             Log.e(TAG, "process: >>>>>" );
 
-            callback.onContinue(postcard1);
-//            callback.onInterrupt(new Exception("没有登录"));
+//            callback.onContinue(postcard1);
+            callback.onInterrupt(new Exception("没有登录"));
         }
 
     }

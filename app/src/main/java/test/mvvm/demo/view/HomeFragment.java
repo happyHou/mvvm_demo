@@ -17,6 +17,14 @@ import test.mvvm.demo.viewmodel.HomeViewModel;
 
 public class HomeFragment extends BaseFragment<FragmentHomeBinding,HomeViewModel>{
     private static final String TAG = "HomeFragment";
+    private String hi="hihi";
+
+    public static HomeFragment newInstance(String hi){
+        HomeFragment fragment=new HomeFragment();
+        fragment.hi=hi;
+        return fragment;
+    }
+
     @Override
     protected void setUpViews() {
         View inflate = getLayoutInflater().inflate(R.layout.inner_textview, binding.danmuContainer, false);
@@ -30,6 +38,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding,HomeViewModel
 
         DanmakuView danmakuView=new DanmakuView(getActivity());
         danmakuView.show(binding.danmuContainer,9000L);
+        binding.hi.setText(hi);
 
     }
 
