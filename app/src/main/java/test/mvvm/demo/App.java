@@ -1,13 +1,14 @@
 package test.mvvm.demo;
 
-import android.app.Application;
-
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.blankj.utilcode.util.ScreenUtils;
 
+import androidx.multidex.MultiDexApplication;
 
-public class App extends Application {
 
+public class App extends MultiDexApplication {
+
+    public static String hi;
     public static App instance;
     public int screenWidth ;
     @Override

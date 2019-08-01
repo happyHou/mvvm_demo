@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyVhLayout">
+        <attr name="show_max_height" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RichText">
+        <attr name="drawable_src" format="reference" />
+        <attr name="drawable_height" format="dimension" />
+        <attr name="drawable_width" format="dimension" />
+        <attr name="drawable_location">
+            <enum name="left" value="1" />
+            <enum name="top" value="2" />
+            <enum name="right" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- style for MaterialRefreshLayout  -->
+    <declare-styleable name="MaterialRefreshLayout">
+        <attr name="overlay" format="boolean" />
+        <!-- style for MaterialWaveView  -->
+        <attr name="wave_height_type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="higher" value="1" />
+        </attr>
+        <attr name="wave_color" format="color" />
+        <attr name="wave_show" format="boolean" />
+        <!-- style for CircleProgressBar  -->
+        <attr name="progress_colors" format="reference" />
+        <attr name="progress_stoke_width" format="dimension" />
+        <attr name="progress_backgroud_color" format="color" />
+        <attr name="progress_show_arrow" format="boolean" />
+        <attr name="progress_arrow_width" format="dimension" />
+        <attr name="progress_arrow_height" format="dimension" />
+        <attr name="progress_show_circle_backgroud" format="boolean" />
+        <attr name="progress_value" format="integer" />
+        <attr name="progress_max_value" format="integer" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+        <attr name="progress_size_type" format="enum">
+            <enum name="normal" value="0"></enum>
+            <enum name="big" value="1"></enum>
+        </attr>
+        <attr name="isLoadMore" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="MumLoadingView">
+        <attr name="colorStyle">
+            <enum name="blue" value="1" />
+            <enum name="grey" value="0" />
+        </attr>
+        <attr name="progressWidth" format="dimension" />
+        <attr name="progressHeight" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="DragLayout">
+        <attr name="minTitleHeight" format="dimension" />
+        <attr name="minContentHeight" format="dimension" />
+        <attr name="contentScrollViewId" format="reference" />
+        <attr name="rTop" format="dimension" />
+        <attr name="rBottom" format="dimension" />
+        <attr name="heightOffset" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="MyBlankTextView">
+        <attr name="blankSign" format="string" />
+    </declare-styleable>
+
+    <!--<declare-styleable name="bubble">-->
+        <!--<attr name="bushadowColor" format="color" />-->
+        <!--<attr name="padding" format="dimension" />-->
+        <!--<attr name="strokeWidth" format="float" />-->
+        <!--<attr name="cornerRadius" format="float" />-->
+        <!--<attr name="halfBaseOfLeg" format="dimension" />-->
+    <!--</declare-styleable>-->
+
+
+    <declare-styleable name="FlowTagLayout">
+        <attr name="horizontal_gap" format="integer" />
+        <attr name="vertical_gap" format="integer" />
+        <attr name="select_type" format="enum">
+            <enum name="none" value="0" />
+            <enum name="single" value="1" />
+            <enum name="multi" value="2" />
+        </attr>
+        <attr name="tag_drawable_bg" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="borderWidth" format="dimension" />
+        <attr name="circularColor" format="color|reference" />
+    </declare-styleable>
+
+    <!--识别码-->
+    <declare-styleable name="PasswordView">
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordPadding" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidths" format="dimension" />
+        <attr name="cursorFlashTime" format="integer" />
+        <attr name="isCursorEnable" format="boolean" />
+        <attr name="cipherEnable" format="boolean" />
+        <attr name="cursorColor" format="color" />
+        <attr name="mode" format="enum">
+            <enum name="underline" value="0" />
+            <enum name="rect" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ViewLive">
+        <attr name="isBigView" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ReadMoreTextView">
+        <attr name="trimExpandedText" format="string" />
+        <attr name="trimCollapsedText" format="string" />
+        <attr name="trimLength" format="integer" />
+        <attr name="showTrimExpandedText" format="boolean" />
+        <attr name="colorClickableText" format="color" />
+        <attr name="trimLines" format="integer" />
+        <attr name="trimMode">
+            <enum name="trimModeLine" value="0" />
+            <enum name="trimModeLength" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TabIndicatorAttr">
+        <attr name="tabIndicatorNum" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LineBreakLayout">
+        <!--标签之间左右距离-->
+        <attr name="leftAndRightSpace" format="dimension" />
+        <!--标签行距-->
+        <attr name="rowSpace" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ColourLineView">
+        <!--线条高度-->
+        <attr name="line_height" format="dimension"/>
+        <!--第一种颜色块的宽度-->
+        <attr name="item_width" format="dimension"/>
+        <!--第二种颜色块的宽度-->
+        <attr name="separation_width" format="dimension"/>
+        <!--平行四边形倾斜的程度-->
+        <attr name="lean_degree" format="dimension"/>
+        <!--第一种颜色-->
+        <attr name="first_color" format="color"/>
+        <!--第二种颜色-->
+        <attr name="second_color" format="color"/>
+        <!--线条底色-->
+        <attr name="canvas_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="image_radius" format="dimension" />//圆角大小
+        <attr name="image_shadow_radius" format="dimension" />//阴影大小
+        <attr name="image_circle" format="boolean" />//是否圆形
+        <attr name="image_shadow" format="boolean" />//是否阴影
+        <attr name="shadow_color" format="integer"/>//阴影颜色
+    </declare-styleable>
+
+
+    <declare-styleable name="MyCardView">
+        <attr name="leftShadowWidth" format="dimension" />
+        <attr name="topShadowHeight" format="dimension" />
+        <attr name="rightShadowWidth" format="dimension" />
+        <attr name="bottomShadowHeight" format="dimension" />
+        <attr name="shadowSize" format="dimension" />
+        <attr name="shadowColors" format="color" />
+        <attr name="shadowStartAlpha" format="integer" />
+        <attr name="shadowFluidShape" format="enum">
+            <enum name="adsorption" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+        <attr name="cardBackgroundColor" format="color" />
+        <attr name="cornerRadiuss" format="dimension" />
+        <attr name="leftTopCornerRadius" format="dimension" />
+        <attr name="rightTopCornerRadius" format="dimension" />
+        <attr name="leftBottomCornerRadius" format="dimension" />
+        <attr name="rightBottomCornerRadius" format="dimension" />
+        <attr name="elevation" format="dimension" />
+        <attr name="elevationAffectShadowColor" format="boolean" />
+        <attr name="elevationAffectShadowSize" format="boolean" />
+    </declare-styleable>
+
+
+</resources>
