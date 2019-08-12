@@ -40,8 +40,8 @@ android {
 
     externalNativeBuild {
         cmake {
-            path "src/main/cpp/CMakeLists.txt"
             version "3.10.2"
+            path "src/main/cpp/CMakeLists.txt"
         }
     }
 
@@ -52,6 +52,7 @@ android {
         targetCompatibility 1.8
         sourceCompatibility 1.8
     }
+//    sourceSets { main { jni.srcDirs = ['src/main/jni', 'src/main/cpp'] } }
 }
 
 dependencies {
@@ -83,6 +84,7 @@ dependencies {
     implementation 'com.alibaba:arouter-api:1.5.0'
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
     implementation 'com.google.android.exoplayer:exoplayer:2.10.3'
+    implementation 'com.github.todou:appbarspring:1.0.8'
 }
 repositories {
     mavenCentral()
